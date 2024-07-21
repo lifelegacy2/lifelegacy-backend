@@ -1,0 +1,44 @@
+{
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ]
+    }
+  ],
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/home/home.html"
+      },
+      {
+        "source": "/login",
+        "destination": "/login/login.html"
+      },
+      {
+        "source": "/myprofile",
+        "destination": "/myprofile/myprofile.html"
+      },
+      {
+        "source": "/autobiography",
+        "destination": "/autobiography/autobiography.html"
+      },
+      {
+        "source": "/**",
+        "destination": "/404.html"
+      }
+    ]
+  }
+}
